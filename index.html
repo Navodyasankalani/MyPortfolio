@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome cdn font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Navodya Sankalani</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="portfolio pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Software Engineer</span></h5>
+                    <h1>Navodya Sankalani</h1> 
+                    <p>blafndhsvbnhd h hdw wcjssjc sajcnjc bjbasc jcwdj kdkjdf ah hkj fsadkfh f k dfkasdsjf sdajf hdjfh jfh hjh  fhf wealc</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brand fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brand fa-github"></i></a>
+                        <a href=""><i class="fa-brand fa-trailhead"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- typed js fortyping text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        //creating button click show hide navbar 
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+
+        var typed= new Typed(".input",{
+            strings:["Frontend Developer", "Software Engineer", "Web Developer"],
+            typedSpeed: 70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
